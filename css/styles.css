@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;;
+    background-color: #F8F3E1;
+    line-height: 1.7;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #2a2c12;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid rgba(65, 67, 27, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+ul.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #41431B;
+    padding: 0.5rem 1rem;
+
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #41431B;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.highlight {
+  color: #AEB784;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: #41431B;
+  color: #F8F3E1;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: #41431B;
+  color: #41431B;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: #41431B;
+  color: #41431B;
+}
+
+.btn-outline:hover {
+  background-color: #41431B;
+  color: #F8F3E1;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #F8F3E1;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    ul.nav-links li {
+        margin-bottom: 1rem;
+    }
+    ul.nav-links li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hamburger {
+        display: block;
+    }
+    
+}
+
